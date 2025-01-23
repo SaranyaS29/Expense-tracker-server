@@ -82,6 +82,13 @@ app.delete("/api/expensesDel/:id",async(req,res)=>
            res.json(result);
        
     });
+    app.delete("/api/expensesDelAll",async(req,res)=>
+        {
+           
+               const result= await expenseModal.deleteMany({});
+               res.json(result);
+           
+        });
                  
                            
    
