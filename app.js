@@ -7,7 +7,7 @@ const mongourl="mongodb://localhost:27017/Mongo"
 const { v4: uuidv4 } = require('uuid');
 
 mongoose
-.connect(mongourl)
+.connect("mongodb+srv://saranyasundar1111:hoE01AuUx35CWN70@cluster0.kwuvk.mongodb.net/Mongo")
 .then(()=>{
     console.log("Db connected")
     app.listen(PORT,()=>{
